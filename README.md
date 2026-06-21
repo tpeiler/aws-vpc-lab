@@ -1,11 +1,11 @@
-AWS VPC Public and Private Subnet Lab
-Overview
+#AWS VPC Public and Private Subnet Lab
+##Overview
 
 This project demonstrates a foundational AWS networking pattern: a custom VPC with both a public subnet and a private subnet.
 
 The goal of this lab was to understand how AWS routes internet traffic for public and private resources using an Internet Gateway, NAT Gateway, and separate route tables.
 
-Architecture
+##Architecture
 Demo VPC: 10.0.0.0/16
 
                          Internet
@@ -21,16 +21,16 @@ Demo VPC: 10.0.0.0/16
                             |
                             v
              Private Subnet: 10.0.2.0/24
-Resources Created
-Custom VPC: 10.0.0.0/16
-Public subnet: 10.0.1.0/24
-Private subnet: 10.0.2.0/24
-Internet Gateway
-NAT Gateway
-Public route table
-Private route table
-Route Table Design
-Public Route Table
+##Resources Created
+.Custom VPC: 10.0.0.0/16
+.Public subnet: 10.0.1.0/24
+.Private subnet: 10.0.2.0/24
+.Internet Gateway
+.NAT Gateway
+.Public route table
+.Private route table
+.Route Table Design
+.Public Route Table
 
 The public route table allows internet-bound traffic to reach the Internet Gateway.
 
